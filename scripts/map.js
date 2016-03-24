@@ -1,10 +1,10 @@
 // code adapted from https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-image-slideshow/
 
 L.mapbox.accessToken =
-	'pk.eyJ1IjoidnVsaWJyYXJ5Z2lzIiwiYSI6ImFaN2JkSlUifQ.Dl2sTO1mGKK7MCd1ViGPnQ';
+	'pk.eyJ1IjoicmFtb25hMjAyMCIsImEiOiI2ZjQzZTA4N2QxNjA5NzM2YjVhZTMwY2M1YmI2M2I2YSJ9.U1IwzOSQO-xjLU7NPxo-Dw';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map', "vulibrarygis.of23e6p0").setView([52.51, 13.38],
+var map = L.mapbox.map('map', "ramona2020.pgbjd0jf").setView([52.51, 13.38],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
