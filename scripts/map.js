@@ -191,7 +191,7 @@ function processLayer(result) {
 	} else if (selection_label == "1947") {
 		new_id = 'vulibrarygis.l36anlai'
 	} else if (selection_label == "1970") {
-		new_id = 'vulibrarygis.l36db1a5'
+		new_id = 'aimihamraie.pdn8f2fi'
 	} else {
 		new_id = 'vulibrarygis.of23e6p0'
 	};
