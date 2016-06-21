@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoicmFtb25hMjAyMCIsImEiOiI2ZjQzZTA4N2QxNjA5NzM2YjVhZTMwY2M1YmI2M2I2YSJ9.U1IwzOSQO-xjLU7NPxo-Dw';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map', "ramona2020.0f9jb407").setView([71.06, 42.36],
+var map = L.mapbox.map('map', "ramona2020.0f9jb407").setView([-71.06, 42.36],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
