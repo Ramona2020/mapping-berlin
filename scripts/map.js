@@ -88,7 +88,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://ramonav.cloudant.com/mapping-boston/_design/tour/',
+	$.getJSON("https://ramonav.cloudant.com/mapping-boston/_design/tour/",
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
