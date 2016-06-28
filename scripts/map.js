@@ -182,8 +182,8 @@ function getPoints(cloudantIDs) {
 function processLayer(result) {
 	// Add features to the map
 	var selection_label = $('#layers-dropdown option:selected').text();
-	if (selection_label == "1908") {
-		new_id = 'vulibrarygis.l74iic1a'
+	if (selection_label == "free") {
+		new_id = 'ramona2020.0f9jb407'
 	} else if (selection_label == "1920") {
 		new_id = 'vulibrarygis.l366jopj'
 	} else if (selection_label == "1936") {
