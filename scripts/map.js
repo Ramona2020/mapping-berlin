@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoicmFtb25hMjAyMCIsImEiOiI2ZjQzZTA4N2QxNjA5NzM2YjVhZTMwY2M1YmI2M2I2YSJ9.U1IwzOSQO-xjLU7NPxo-Dw';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map', "ramona2020.0f9jb407").setView([42.36, -71.06],
+var map = L.mapbox.map('map', "ramona2020.o3fkmamf").setView([42.36, -71.06],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
@@ -193,7 +193,7 @@ function processLayer(result) {
 	} else if (selection_label == "1970") {
 		new_id = 'aimihamraie.pdn8f2fi'
 	} else {
-		new_id = 'ramona2020.0f9jb407'
+		new_id = 'ramona2020.o3fkmamf'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);
 	new_layer.addTo(map);
