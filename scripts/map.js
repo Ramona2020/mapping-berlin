@@ -88,7 +88,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://ramonav.cloudant.com/open-gis/_design/tour/',
+	$.getJSON('https://ramonav.cloudant.com/mapping-boston/_design/tour/',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
@@ -121,7 +121,7 @@ $("#search").submit(function(event) {
 
 function getLayer(callback, cloudantView) {
 	var cloudantURLbase =
-		"https://ramonav.cloudant.com/open-gis/_design/tour/_view/";
+		"https://ramonav.cloudant.com/mapping-boston/_design/tour/_view/";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -137,7 +137,7 @@ function getLayer(callback, cloudantView) {
 // See http://stackoverflow.com/questions/19916894/wait-for-multiple-getjson-calls-to-finish
 function searchPoints(callback, cloudantSearch) {
 	var cloudantURLbase =
-		"https://ramonav.cloudant.com/open-gis/_design/tour/_search/ids?q=";
+		"https://ramonav.cloudant.com/mapping-boston/_design/tour/_search/ids?q=";
 	var cloudantURLcallback = "&callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantSearch + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -156,7 +156,7 @@ function getPoints(cloudantIDs) {
 	}
 
 	function getPoint(id) {
-		var cloudantURLbase = "https://ramonav.cloudant.com/open-gis/";
+		var cloudantURLbase = "https://ramonav.cloudant.com/mapping-boston/";
 		var url = cloudantURLbase + id;
 		return $.getJSON(url); // this returns a "promise"
 	}
